@@ -1,4 +1,4 @@
-import { ReactElement, createElement, useMemo } from "react";
+import React, { ReactElement, useMemo } from "react";
 import classNames from "classnames";
 import { EnumerationSortSelectorContainerProps } from "../typings/EnumerationSortSelectorProps";
 import "./ui/EnumerationSortSelector.css";

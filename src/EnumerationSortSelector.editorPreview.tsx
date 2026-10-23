@@ -1,4 +1,4 @@
-import { ReactElement, createElement } from "react";
+import React, { ReactElement } from "react";
 import { EnumerationSortSelectorPreviewProps } from "../typings/EnumerationSortSelectorProps";
 
 export function preview(props: EnumerationSortSelectorPreviewProps): ReactElement {
