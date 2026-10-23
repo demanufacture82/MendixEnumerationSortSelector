@@ -9,7 +9,7 @@
                 <caption>Enumeration attribute</caption>
                 <description>The enumeration attribute whose values are displayed and edited.</description>
                 <attributeTypes>
-                    <attributeType name="Enumeration"/>
+                    <attributeType name="Enum"/>
                 </attributeTypes>
             </property>
         </propertyGroup>
