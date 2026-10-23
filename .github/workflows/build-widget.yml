@@ -20,8 +20,11 @@ jobs:
           node-version: '22.18.0'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --include=optional
 
+      - name: Rebuild native modules
+        run: npm rebuild
+        
       - name: Build widget
         run: npm run release
 
