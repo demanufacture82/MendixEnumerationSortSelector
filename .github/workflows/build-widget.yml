@@ -22,19 +22,19 @@ jobs:
       - name: Remove lock file
         run: rm -f package-lock.json
 
-- name: Clean workspace
-  run: |
-    rm -rf node_modules
-    rm -f package-lock.json
+      - name: Clean workspace
+        run: |
+          rm -rf node_modules
+          rm -f package-lock.json
 
-- name: Install dependencies
-  run: npm install --include=optional
+      - name: Install dependencies
+        run: npm install --include=optional
 
-- name: Explicitly install missing native dependency
-  run: npm install @napi-rs/lzma-linux-x64-gnu --save-dev
+      - name: Explicitly install missing native dependency
+        run: npm install @napi-rs/lzma-linux-x64-gnu --save-dev
 
-- name: Build widget
-  run: npm run release
+      - name: Build widget
+        run: npm run release
 
       - name: Rebuild native modules
         run: npm rebuild
