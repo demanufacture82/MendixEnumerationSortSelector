@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.widget.enumerationsortselector.EnumerationSortSelector" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/">
+<widget id="com.widgets.enumerationsortselector.EnumerationSortSelector" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/">
     <name>Enumeration sort selector</name>
     <description>Select an enumeration value and sort the options by technical key or localized caption.</description>
     <icon/>
