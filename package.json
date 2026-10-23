@@ -1,0 +1,32 @@
+{
+  "name": "enumeration-sort-selector",
+  "version": "1.0.0",
+  "description": "Mendix enumeration selector sortable by key or localized caption",
+  "license": "Apache-2.0",
+  "author": "Pascal Groen",
+  "scripts": {
+    "build": "pluggable-widgets-tools build:web",
+    "release": "pluggable-widgets-tools release:web",
+    "lint": "pluggable-widgets-tools lint",
+    "start": "pluggable-widgets-tools start:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "10.24.1",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "classnames": "2.5.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "widgetName": "EnumerationSortSelector",
+  "packagePath": "com.widgets",
+  "config": {
+    "projectPath": "../testProject",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  }
+}

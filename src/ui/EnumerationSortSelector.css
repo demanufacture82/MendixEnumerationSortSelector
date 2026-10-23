@@ -1,0 +1,9 @@
+.enumeration-sort-selector {
+    width: 100%;
+}
+
+.enumeration-sort-selector__validation {
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding: 6px 10px;
+}

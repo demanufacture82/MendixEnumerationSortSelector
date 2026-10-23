@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.widget.enumerationsortselector.EnumerationSortSelector" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Enumeration sort selector</name>
+    <description>Select an enumeration value and sort the options by technical key or localized caption.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="Data source">
+            <property key="enumerationAttribute" type="attribute" required="true">
+                <caption>Enumeration attribute</caption>
+                <description>The enumeration attribute whose values are displayed and edited.</description>
+                <attributeTypes>
+                    <attributeType name="Enumeration"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Behavior">
+            <property key="sortMode" type="enumeration" defaultValue="caption">
+                <caption>Sort by</caption>
+                <description>Sort by the technical enumeration key or by the translated caption for the current user language.</description>
+                <enumerationValues>
+                    <enumerationValue key="key">Key</enumerationValue>
+                    <enumerationValue key="caption">Caption (current user language)</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="sortDirection" type="enumeration" defaultValue="ascending">
+                <caption>Direction</caption>
+                <description>Sort ascending or descending.</description>
+                <enumerationValues>
+                    <enumerationValue key="ascending">Ascending</enumerationValue>
+                    <enumerationValue key="descending">Descending</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="emptyOptionCaption" type="string" defaultValue="">
+                <caption>Empty option caption</caption>
+                <description>Caption for the empty value. Leave empty to show a blank option.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="ariaLabel" type="string" defaultValue="Enumeration">
+                <caption>Accessible label</caption>
+                <description>Label announced by screen readers.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
